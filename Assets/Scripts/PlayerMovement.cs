@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    private void Update()
+    private void FixedUpdate()
     {
         _change = Vector3.zero;
         _change.x = Input.GetAxisRaw("Horizontal");
@@ -44,6 +44,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void MoveCharacter()
     {
-        _rigidBody.MovePosition(transform.position + _change * (speed * Time.deltaTime));
+        _rigidBody.MovePosition(transform.position + _change * speed * Time.deltaTime);
     }
 }

@@ -4,6 +4,7 @@
     <e p="A:\UnityProjects\RPG Game" t="IncludeRecursive">
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="CameraMovement.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
           <e p="Scripts.asmdef" t="Include" />
           <e p="test-tmp" t="Include">
