@@ -10,10 +10,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RoomMove.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../eSports Manager/Assets/Scripts/MainMenu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SceneChange.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sign.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerStartPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LoadLevel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tests/damage_calculator.cs" />
@@ -29,6 +36,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraMovememnt.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RoomMove.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Sign.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SceneChange.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
       </list>
     </option>
   </component>
@@ -44,6 +56,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -56,10 +69,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="18696">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="18696" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -80,7 +93,9 @@
       <workItem from="1600638097938" duration="10000" />
       <workItem from="1600722410107" duration="3169000" />
       <workItem from="1600894999652" duration="1370000" />
-      <workItem from="1600976241159" duration="4316000" />
+      <workItem from="1600976241159" duration="4920000" />
+      <workItem from="1601045700355" duration="1326000" />
+      <workItem from="1601049781895" duration="7767000" />
     </task>
     <servers />
   </component>
@@ -157,5 +172,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="375" key="GridCell.Tab.3.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1600980620983" />
+    <state x="420" y="226" key="SettingsEditor" timestamp="1601045844834">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="420" y="226" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601045844834" />
   </component>
 </project>
