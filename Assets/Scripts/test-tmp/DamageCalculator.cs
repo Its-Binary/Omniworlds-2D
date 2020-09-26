@@ -11,12 +11,12 @@ public class DamageCalculator
         return Convert.ToInt32(amount * multiplier);
     }
     
-    public static int CalculateDamage(int amount, ICharacter character)
+   /* public static int CalculateDamage(int amount, ICharacter character)
     {
         int totalArmour = character.Inventory.GetTotalArmour() + (character.Level * 10);
         float multiplier = 100f - totalArmour;
         multiplier /= 100f;
 
         return Convert.ToInt32(amount * multiplier);
-    }
+    }*/
 }

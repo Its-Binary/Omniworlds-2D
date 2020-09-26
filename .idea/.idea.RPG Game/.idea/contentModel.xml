@@ -5,7 +5,15 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="CameraController.cs" t="Include" />
+          <e p="DestroyOverTime.cs" t="Include" />
+          <e p="DialogueHolder.cs" t="Include" />
+          <e p="DialogueManager.cs" t="Include" />
+          <e p="EnemyHealthManager.cs" t="Include" />
           <e p="FloatingNumbers.cs" t="Include" />
+          <e p="HurtEnemy.cs" t="Include" />
+          <e p="HurtPlayer.cs" t="Include" />
+          <e p="InteractionsObject.cs" t="Include" />
+          <e p="Inventory.cs" t="Include" />
           <e p="LoadArea.cs" t="Include" />
           <e p="Monster.cs" t="Include" />
           <e p="Monsters" t="Include">
@@ -18,10 +26,13 @@
           </e>
           <e p="PlayerController.cs" t="Include" />
           <e p="PlayerHealthManager.cs" t="Include" />
+          <e p="PlayerInteract.cs" t="Include" />
           <e p="PlayerStartPoint.cs" t="Include" />
+          <e p="PlayerStats.cs" t="Include" />
           <e p="SceneChange.cs" t="Include" />
           <e p="Scripts.asmdef" t="Include" />
           <e p="Sign.cs" t="Include" />
+          <e p="SlimeController.cs" t="Include" />
           <e p="test-tmp" t="Include">
             <e p="Character.cs" t="Include" />
             <e p="DamageCalculator.cs" t="Include" />
@@ -36,6 +47,8 @@
             <e p="Inventory.cs" t="Include" />
             <e p="Tests.asmdef" t="Include" />
           </e>
+          <e p="UIManager.cs" t="Include" />
+          <e p="VillagerMovement.cs" t="Include" />
         </e>
         <e p="SuperTiled2Unity" t="Include">
           <e p="Examples" t="Include">

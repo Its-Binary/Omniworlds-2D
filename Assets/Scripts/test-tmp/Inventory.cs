@@ -2,7 +2,7 @@
 using System.Linq;
 using UnityEngine;
 
-public class Inventory
+public class iInventory
 {
     Dictionary<EquipSlots, Item> _equippedItems = new Dictionary<EquipSlots,Item>();
     private List<Item> _unequppiedItems = new List<Item>();

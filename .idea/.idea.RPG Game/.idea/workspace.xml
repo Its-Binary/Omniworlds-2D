@@ -30,12 +30,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/EquipSlots.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Items.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tests/inventory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ICharacter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DamageCalculator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tests/character_with_inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraMovememnt.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
@@ -51,6 +48,23 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Monster.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FloatingNumbers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Monsters/Slime.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DialogueManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DestroyOverTime.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DialogueHolder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyHealthManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HurtEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HurtPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InteractionsObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tests/inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tests/character_with_inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/test-tmp/Character.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/test-tmp/ICharacter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/test-tmp/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/test-tmp/DamageCalculator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInteract.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerStats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SlimeController.cs" />
       </list>
     </option>
   </component>
@@ -105,7 +119,8 @@
       <workItem from="1600894999652" duration="1370000" />
       <workItem from="1600976241159" duration="4920000" />
       <workItem from="1601045700355" duration="1326000" />
-      <workItem from="1601049781895" duration="16603000" />
+      <workItem from="1601049781895" duration="16775000" />
+      <workItem from="1601161971555" duration="922000" />
     </task>
     <servers />
   </component>
