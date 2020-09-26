@@ -11,9 +11,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RoomMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../eSports Manager/Assets/Scripts/MainMenu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerStartPoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerHealthManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LoadArea.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monsters/Slime.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SceneChange.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sign.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -21,7 +25,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerStartPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LoadLevel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tests/damage_calculator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EquipSlots.cs" />
@@ -40,7 +43,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Sign.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SceneChange.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerStartPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerHealthManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LoadArea.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Monster.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FloatingNumbers.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Monsters/Slime.cs" />
       </list>
     </option>
   </component>
@@ -95,7 +105,7 @@
       <workItem from="1600894999652" duration="1370000" />
       <workItem from="1600976241159" duration="4920000" />
       <workItem from="1601045700355" duration="1326000" />
-      <workItem from="1601049781895" duration="7767000" />
+      <workItem from="1601049781895" duration="16603000" />
     </task>
     <servers />
   </component>

@@ -5,10 +5,20 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="CameraController.cs" t="Include" />
-          <e p="CameraMovement.cs" t="Include" />
+          <e p="FloatingNumbers.cs" t="Include" />
+          <e p="LoadArea.cs" t="Include" />
+          <e p="Monster.cs" t="Include" />
+          <e p="Monsters" t="Include">
+            <e p="Slime.cs" t="Include" />
+          </e>
+          <e p="otherCode" t="Include">
+            <e p="CameraMovement.cs" t="Include" />
+            <e p="PlayerMovement.cs" t="Include" />
+            <e p="RoomMove.cs" t="Include" />
+          </e>
           <e p="PlayerController.cs" t="Include" />
-          <e p="PlayerMovement.cs" t="Include" />
-          <e p="RoomMove.cs" t="Include" />
+          <e p="PlayerHealthManager.cs" t="Include" />
+          <e p="PlayerStartPoint.cs" t="Include" />
           <e p="SceneChange.cs" t="Include" />
           <e p="Scripts.asmdef" t="Include" />
           <e p="Sign.cs" t="Include" />
