@@ -32,8 +32,8 @@ public class CameraController : MonoBehaviour
 
         //use the tilemap bounds + the half width and height for limits
         _bottomLeftLimit = map.localBounds.min + new Vector3(_halfWidth, _halfHeight, 0f);
-        _topRightLimit = map.localBounds.max + new Vector3(-_halfHeight, -_halfWidth, 0f);
-        
+        _topRightLimit = map.localBounds.max + new Vector3(-_halfWidth, -_halfHeight, 0f);
+
         //pass the info through to the player controller to set its limits
         PlayerController.instance.SetBounds(map.localBounds.min, map.localBounds.max);
     }
