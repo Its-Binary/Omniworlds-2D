@@ -11,15 +11,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../eSports Manager/Assets/Scripts/MainMenu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DialogManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AreaExit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerStartPoint.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerHealthManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LoadArea.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monsters/Slime.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SceneChange.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sign.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharStats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIFade.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../eSports Manager/Assets/Scripts/MainMenu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EssentialsLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AreaEntrance.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -39,9 +38,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/RoomMove.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sign.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SceneChange.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerStartPoint.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerHealthManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LoadArea.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IEnemy.cs" />
@@ -65,6 +62,19 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInteract.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerStats.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SlimeController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIMananger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/VillagerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AreaEntrance.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AreaExit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIFade.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EssentialsLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DialogActivator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DialogManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CharStats.cs" />
       </list>
     </option>
   </component>
@@ -120,7 +130,8 @@
       <workItem from="1600976241159" duration="4920000" />
       <workItem from="1601045700355" duration="1326000" />
       <workItem from="1601049781895" duration="16775000" />
-      <workItem from="1601161971555" duration="922000" />
+      <workItem from="1601161971555" duration="2304000" />
+      <workItem from="1601305695210" duration="15034000" />
     </task>
     <servers />
   </component>
