@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3310277804237756501}
   - component: {fileID: 3310277804237756497}
   - component: {fileID: 3213039764237617528}
-  - component: {fileID: 5313154802681843405}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -160,33 +159,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5313154802681843405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3310277804237756502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e11b5c76afeeef428adaa58e39e6748, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  charName: ItsLittany
-  playerLevel: 1
-  currentXP: 0
-  xpToNextLevel: 
-  maxLevel: 100
-  baseXp: 1000
-  currentHp: 0
-  maxHp: 100
-  currentMp: 0
-  maxMp: 30
-  mpLvlBonus: 
-  strength: 0
-  defence: 0
-  wpnPower: 0
-  armourPwr: 0
-  equippedWpn: 
-  equippedArmour: 
-  charImage: {fileID: 7152930139536384079, guid: a230b20fd54d33248846f5ce5920dc93, type: 3}

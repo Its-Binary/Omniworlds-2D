@@ -27,6 +27,14 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //Check to see if the player is allowed to move or not
+        if (gameMenuOpen || dialogActive || fadingBetweenAreas)
+        {
+            PlayerController.instance.canMove = false;
+        }
+        else
+        {
+            PlayerController.instance.canMove = true;
+        }
     }
 }
