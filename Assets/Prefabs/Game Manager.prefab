@@ -236,3 +236,15 @@ MonoBehaviour:
   gameMenuOpen: 0
   dialogActive: 0
   fadingBetweenAreas: 0
+  shopActive: 0
+  battleActive: 0
+  itemsHeld: []
+  numberOfItems: 
+  referenceItems:
+  - {fileID: 1959811731546309771, guid: d1b1ba64aaff67e4d858ad5ce86b8ee4, type: 3}
+  - {fileID: 8950329543875910984, guid: 08634c1b5eee8dc49affd5fbc663f309, type: 3}
+  - {fileID: 5962398918499724217, guid: 40fa1af7a0a1cf849914d92a67828c6c, type: 3}
+  - {fileID: 1282621215669476672, guid: 41a4c8074b7d0944b88ac8afe702f238, type: 3}
+  - {fileID: 5647924956843215754, guid: 52d9600f853d72d48abd6f28b7cf8670, type: 3}
+  - {fileID: 6951127737513513678, guid: 6296a6dc6d38d9948b6101c33ef361d3, type: 3}
+  currentGold: 0
