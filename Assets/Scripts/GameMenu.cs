@@ -45,6 +45,8 @@ public class GameMenu : MonoBehaviour
     void Start()
     {
         instance = this;
+        itemName.text = "";
+        itemDescription.text = "";
     }
 
     // Update is called once per frame
