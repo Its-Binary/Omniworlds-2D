@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class Shop : MonoBehaviour
 {
     public static Shop instance;
+    
     [Header("Menu References")]
     public GameObject shopMenu;
     public GameObject buyMenu;
