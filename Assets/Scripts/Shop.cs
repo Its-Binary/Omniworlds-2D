@@ -1,58 +1,50 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 
-public class Shop : MonoBehaviour
-{
+public class Shop : MonoBehaviour {
+
     public static Shop instance;
-    
-    [Header("Menu References")]
+
     public GameObject shopMenu;
     public GameObject buyMenu;
     public GameObject sellMenu;
 
     public Text goldText;
+
     public string[] itemsForSale;
+
     public ItemButton[] buyItemButtons;
     public ItemButton[] sellItemButtons;
 
     public Item selectedItem;
-    
-    [Header("Buying")]
-    public Text buyItemName;
-    public Text buyItemDescription;
-    public Text buyItemValue;
-    
-    [Header("Selling")]
-    public Text sellItemName;
-    public Text sellItemDescription;
-    public Text sellItemValue;
+    public Text buyItemName, buyItemDescription, buyItemValue;
+    public Text sellItemName, sellItemDescription, sellItemValue;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+	// Use this for initialization
+	void Start () {
         instance = this;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //This is a temporary workaround to accessing the shop for testing
-        if (Input.GetKeyDown(KeyCode.K) && !shopMenu.activeInHierarchy)
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		if(Input.GetKeyDown(KeyCode.K) && !shopMenu.activeInHierarchy)
         {
             OpenShop();
         }
-    }
+	}
 
     public void OpenShop()
     {
         shopMenu.SetActive(true);
-
         OpenBuyMenu();
 
         GameManager.instance.shopActive = true;
+
         goldText.text = GameManager.instance.currentGold.ToString() + "g";
     }
-    
+
     public void CloseShop()
     {
         shopMenu.SetActive(false);

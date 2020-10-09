@@ -2,34 +2,45 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EssentialsLoader : MonoBehaviour
-{
+public class EssentialsLoader : MonoBehaviour {
+
     public GameObject UIScreen;
     public GameObject player;
-    public GameObject gameManager;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        if (UIFade.instance == null)
+    public GameObject gameMan;
+    public GameObject audioMan;
+    public GameObject battleMan;
+
+	// Use this for initialization
+	void Start () {
+		if(UIFade.instance == null)
         {
             UIFade.instance = Instantiate(UIScreen).GetComponent<UIFade>();
         }
 
-        if (PlayerController.instance == null)
+        if(PlayerController.instance == null)
         {
-            PlayerController.instance = Instantiate(player).GetComponent<PlayerController>();
+            PlayerController clone = Instantiate(player).GetComponent<PlayerController>();
+            PlayerController.instance = clone;
         }
 
         if (GameManager.instance == null)
         {
-            GameManager.instance = Instantiate(gameManager).GetComponent<GameManager>();
+            GameManager.instance = Instantiate(gameMan).GetComponent<GameManager>();
         }
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        if(AudioManager.instance == null)
+        {
+            AudioManager.instance = Instantiate(audioMan).GetComponent<AudioManager>();
+        }
+
+        if(BattleManager.instance == null)
+        {
+            BattleManager.instance = Instantiate(battleMan).GetComponent<BattleManager>();
+        }
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
 }

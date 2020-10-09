@@ -1,33 +1,39 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DialogManager : MonoBehaviour
-{
-    public TextMeshProUGUI dialogText;
-    public TextMeshProUGUI nameText;
+public class DialogManager : MonoBehaviour {
+
+    public Text dialogText;
+    public Text nameText;
     public GameObject dialogBox;
     public GameObject nameBox;
+
     public string[] dialogLines;
+
     public int currentLine;
     private bool justStarted;
-    public static DialogManager instance;
-    
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        instance = this;
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (dialogBox.activeInHierarchy)
+    public static DialogManager instance;
+
+    private string questToMark;
+    private bool markQuestComplete;
+    private bool shouldMarkQuest;
+
+    // Use this for initialization
+    void Start () {
+        instance = this;
+
+        //dialogText.text = dialogLines[currentLine];
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+        if(dialogBox.activeInHierarchy)
         {
-            if (Input.GetButtonUp("Fire1"))
+            if(Input.GetButtonUp("Fire1"))
             {
                 if (!justStarted)
                 {
@@ -38,20 +44,35 @@ public class DialogManager : MonoBehaviour
                         dialogBox.SetActive(false);
 
                         GameManager.instance.dialogActive = false;
+
+                        if(shouldMarkQuest)
+                        {
+                            shouldMarkQuest = false;
+                            if(markQuestComplete)
+                            {
+                                QuestManager.instance.MarkQuestComplete(questToMark);
+                            } else
+                            {
+                                QuestManager.instance.MarkQuestIncomplete(questToMark);
+                            }
+                        }
                     }
                     else
                     {
                         CheckIfName();
+
                         dialogText.text = dialogLines[currentLine];
                     }
-                }
-                else
+                } else
                 {
                     justStarted = false;
                 }
+
+                
             }
         }
-    }
+
+	}
 
     public void ShowDialog(string[] newLines, bool isPerson)
     {
@@ -65,6 +86,7 @@ public class DialogManager : MonoBehaviour
         dialogBox.SetActive(true);
 
         justStarted = true;
+
         nameBox.SetActive(isPerson);
 
         GameManager.instance.dialogActive = true;
@@ -72,14 +94,18 @@ public class DialogManager : MonoBehaviour
 
     public void CheckIfName()
     {
-        //If the first line starts with n- then we know that line is the name
-        if (dialogLines[currentLine].StartsWith("n-"))
+        if(dialogLines[currentLine].StartsWith("n-"))
         {
-            //assign to the name box text and remove the n- from the start
             nameText.text = dialogLines[currentLine].Replace("n-", "");
             currentLine++;
         }
     }
-    
-    
+
+    public void ShouldActivateQuestAtEnd(string questName, bool markComplete)
+    {
+        questToMark = questName;
+        markQuestComplete = markComplete;
+
+        shouldMarkQuest = true;
+    }
 }

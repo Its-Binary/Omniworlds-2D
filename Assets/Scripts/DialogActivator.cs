@@ -1,36 +1,39 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogActivator : MonoBehaviour
-{
-    public string[] lines;
-    private bool _canActivate;
-    public bool isPerson = true;
-    
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+public class DialogActivator : MonoBehaviour {
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (_canActivate && Input.GetButtonDown("Fire1") && !DialogManager.instance.dialogBox.activeInHierarchy)
+    public string[] lines;
+
+    private bool canActivate;
+
+    public bool isPerson = true;
+
+    public bool shouldActivateQuest;
+    public string questToMark;
+    public bool markComplete;
+
+
+	// Use this for initialization
+	void Start () {
+		
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		if(canActivate && Input.GetButtonDown("Fire1") && !DialogManager.instance.dialogBox.activeInHierarchy)
         {
             DialogManager.instance.ShowDialog(lines, isPerson);
-            
+            DialogManager.instance.ShouldActivateQuestAtEnd(questToMark, markComplete);
         }
-    }
+	}
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if(other.tag == "Player")
         {
-            _canActivate = true;
+            canActivate = true;
         }
     }
 
@@ -38,7 +41,7 @@ public class DialogActivator : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            _canActivate = false;
+            canActivate = false;
         }
     }
 }

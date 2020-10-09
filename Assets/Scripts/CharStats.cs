@@ -2,61 +2,60 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharStats : MonoBehaviour
-{
+public class CharStats : MonoBehaviour {
+
     public string charName;
     public int playerLevel = 1;
-    public int currentXP;
-    public int[] xpToNextLevel;
+    public int currentEXP;
+    public int[] expToNextLevel;
     public int maxLevel = 100;
-    public int baseXp = 1000;
-    public int currentHp;
-    public int maxHp = 100;
-    public int currentMp;
-    public int maxMp = 30;
+    public int baseEXP = 1000;
+
+    public int currentHP;
+    public int maxHP = 100;
+    public int currentMP;
+    public int maxMP = 30;
     public int[] mpLvlBonus;
     public int strength;
     public int defence;
-    public int wpnPower;
-    public int armourPwr;
+    public int wpnPwr;
+    public int armrPwr;
     public string equippedWpn;
-    public string equippedArmour;
-    public Sprite charImage;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        xpToNextLevel = new int[maxLevel];
-        xpToNextLevel[1] = baseXp;
+    public string equippedArmr;
+    public Sprite charIamge;
 
-        for (int i = 2; i < xpToNextLevel.Length; i++)
+	// Use this for initialization
+	void Start () {
+        expToNextLevel = new int[maxLevel];
+        expToNextLevel[1] = baseEXP;
+
+        for(int i = 2; i < expToNextLevel.Length; i++)
         {
-            xpToNextLevel[i] = Mathf.FloorToInt(xpToNextLevel[i - 1] * 1.05f);
+            expToNextLevel[i] = Mathf.FloorToInt(expToNextLevel[i - 1] * 1.05f);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //fake button for testing xp gain
-        if (Input.GetKeyDown(KeyCode.K))
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+        if(Input.GetKeyDown(KeyCode.K))
         {
-            AddXp(1000);
+            AddExp(1000);
         }
-    }
+	}
 
-    public void AddXp(int xpToAdd)
+    public void AddExp(int expToAdd)
     {
-        currentXP += xpToAdd;
+        currentEXP += expToAdd;
 
         if (playerLevel < maxLevel)
         {
-            if (currentXP > xpToNextLevel[playerLevel])
+            if (currentEXP > expToNextLevel[playerLevel])
             {
-                currentXP -= xpToNextLevel[playerLevel];
+                currentEXP -= expToNextLevel[playerLevel];
 
                 playerLevel++;
-                
+
                 //determine whether to add to str or def based on odd or even
                 if (playerLevel % 2 == 0)
                 {
@@ -67,17 +66,17 @@ public class CharStats : MonoBehaviour
                     defence++;
                 }
 
-                maxHp = Mathf.FloorToInt(maxHp * 1.05f);
-                currentHp = maxHp;
+                maxHP = Mathf.FloorToInt(maxHP * 1.05f);
+                currentHP = maxHP;
 
-                maxMp += mpLvlBonus[playerLevel];
-                currentMp = maxMp;
+                maxMP += mpLvlBonus[playerLevel];
+                currentMP = maxMP;
             }
         }
 
         if(playerLevel >= maxLevel)
         {
-            currentXP = 0;
+            currentEXP = 0;
         }
     }
 }

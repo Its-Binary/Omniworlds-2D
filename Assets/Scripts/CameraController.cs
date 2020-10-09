@@ -3,50 +3,46 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-public class CameraController : MonoBehaviour
-{
-    //Generally the player but whatever we want the camera to track
+public class CameraController : MonoBehaviour {
+
     public Transform target;
-    
-    //This is to setup for our bounds (use ground layer
-    public Tilemap map;
-    private Vector3 _bottomLeftLimit;
-    private Vector3 _topRightLimit;
-    
-    //Camera measurements are taken from the center so we need half the width and height to make sure we do not show
-    //anything that is out of bounds.
-    private float _halfHeight;
-    private float _halfWidth;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        //Lets find the player
+    public Tilemap theMap;
+    private Vector3 bottomLeftLimit;
+    private Vector3 topRightLimit;
+
+    private float halfHeight;
+    private float halfWidth;
+
+    public int musicToPlay;
+    private bool musicStarted;
+
+	// Use this for initialization
+	void Start () {
+        //target = PlayerController.instance.transform;
         target = FindObjectOfType<PlayerController>().transform;
-        
-        //work out the half height and width using the camera aspect ratio and size
-        _halfHeight = Camera.main.orthographicSize;
-        _halfWidth = _halfHeight * Camera.main.aspect;
-        
-        map.CompressBounds();
 
-        //use the tilemap bounds + the half width and height for limits
-        _bottomLeftLimit = map.localBounds.min + new Vector3(_halfWidth, _halfHeight, 0f);
-        _topRightLimit = map.localBounds.max + new Vector3(-_halfWidth, -_halfHeight, 0f);
+        halfHeight = Camera.main.orthographicSize;
+        halfWidth = halfHeight * Camera.main.aspect;
 
-        //pass the info through to the player controller to set its limits
-        PlayerController.instance.SetBounds(map.localBounds.min, map.localBounds.max);
-    }
+        theMap.CompressBounds();
+        bottomLeftLimit = theMap.localBounds.min + new Vector3(halfWidth, halfHeight, 0f);
+        topRightLimit = theMap.localBounds.max + new Vector3(-halfWidth, -halfHeight, 0f);
 
-    //Using LateUpdate() to reduce any chance of lag with the camera as it is the last thing to be updated
-    void LateUpdate()
-    {
+        PlayerController.instance.SetBounds(theMap.localBounds.min, theMap.localBounds.max);
+	}
+	
+	// LateUpdate is called once per frame after Update
+	void LateUpdate () {
         transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
-        
-        //keep the camera inside the bounds set
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, _bottomLeftLimit.x, _topRightLimit.x),
-                                             Mathf.Clamp(transform.position.y, _bottomLeftLimit.y, _topRightLimit.y), transform.position.z);
-        
-        
-    }
+
+        //keep the camera inside the bounds
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottomLeftLimit.x, topRightLimit.x), Mathf.Clamp(transform.position.y, bottomLeftLimit.y, topRightLimit.y), transform.position.z);
+
+        if(!musicStarted)
+        {
+            musicStarted = true;
+            AudioManager.instance.PlayBGM(musicToPlay);
+        }
+	}
 }

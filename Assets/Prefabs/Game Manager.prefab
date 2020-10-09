@@ -193,6 +193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3021039038172299942}
   - component: {fileID: 13188656852350365}
+  - component: {fileID: 1853959318083612822}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -248,3 +249,17 @@ MonoBehaviour:
   - {fileID: 5647924956843215754, guid: 52d9600f853d72d48abd6f28b7cf8670, type: 3}
   - {fileID: 6951127737513513678, guid: 6296a6dc6d38d9948b6101c33ef361d3, type: 3}
   currentGold: 0
+--- !u!114 &1853959318083612822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8004484275815520530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d098fd23be548c4b5923312a4f56ff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questMarkerNames: []
+  questMarkersComplete: 

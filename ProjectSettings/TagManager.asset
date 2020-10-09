@@ -13,8 +13,8 @@ TagManager:
   - UI
   - 
   - 
-  - Player
-  - Ground
+  - 
+  - 
   - 
   - 
   - 
@@ -41,12 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Ground
-    uniqueID: 2545329041
-    locked: 0
-  - name: WorldObjects
-    uniqueID: 2695393303
+  - name: Background
+    uniqueID: 2087213285
     locked: 0
   - name: Player
-    uniqueID: 3561678003
+    uniqueID: 4218774275
+    locked: 0
+  - name: Battle BG
+    uniqueID: 3525323429
+    locked: 0
+  - name: Battle Chars
+    uniqueID: 971942665
     locked: 0

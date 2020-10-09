@@ -1,90 +1,91 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class Item : MonoBehaviour
-{
-    [Header("Item Type")] //This is to create a "section" inside unity to seperate areas out for readability
+public class Item : MonoBehaviour {
+    [Header("Item Type")]
     public bool isItem;
     public bool isWeapon;
     public bool isArmour;
 
-    [Header("Item Details")] 
+    [Header("Item Details")]
     public string itemName;
     public string description;
     public int value;
     public Sprite itemSprite;
 
-    [Header("Item Details")] 
+    [Header("Item Details")]
     public int amountToChange;
-    public bool affectHp;
-    public bool affectMp;
-    public bool affectStr;
+    public bool affectHP, affectMP, affectStr;
 
-    [Header("Weapon/Armour Details")] 
+    [Header("Weapon/Armor Details")]
     public int weaponStrength;
-    public int armourStrength;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public int armorStrength;
 
-    public void Use(int targetCharacter)
-    {
-        CharStats selectedCharacter = GameManager.instance.playerStats[targetCharacter];
 
-        if (isItem)
+    // Use this for initialization
+    void Start () {
+		
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
+
+    public void Use(int charToUseOn)
+    {
+        CharStats selectedChar = GameManager.instance.playerStats[charToUseOn];
+
+        if(isItem)
         {
-            if (affectHp)
+            if(affectHP)
             {
-                selectedCharacter.currentHp += amountToChange;
+                selectedChar.currentHP += amountToChange;
 
-                if (selectedCharacter.currentHp > selectedCharacter.maxHp)
+                if(selectedChar.currentHP > selectedChar.maxHP)
                 {
-                    selectedCharacter.currentHp = selectedCharacter.maxHp;
+                    selectedChar.currentHP = selectedChar.maxHP;
                 }
-            } 
-            else if (affectMp)
-            {
-                selectedCharacter.currentMp += amountToChange;
+            }
 
-                if (selectedCharacter.currentMp > selectedCharacter.maxMp)
-                {
-                    selectedCharacter.currentMp = selectedCharacter.maxMp;
-                }
-            } 
-            else if (affectStr)
+            if(affectMP)
             {
-                selectedCharacter.strength += amountToChange;
+                selectedChar.currentMP += amountToChange;
+
+                if (selectedChar.currentMP > selectedChar.maxMP)
+                {
+                    selectedChar.currentMP = selectedChar.maxMP;
+                }
+            }
+
+            if(affectStr)
+            {
+                selectedChar.strength += amountToChange;
             }
         }
-        
+
         if(isWeapon)
         {
-            if(selectedCharacter.equippedWpn != "")
+            if(selectedChar.equippedWpn != "")
             {
-                GameManager.instance.AddItem(selectedCharacter.equippedWpn);
+                GameManager.instance.AddItem(selectedChar.equippedWpn);
             }
 
-            selectedCharacter.equippedWpn = itemName;
-            selectedCharacter.wpnPower = weaponStrength;
+            selectedChar.equippedWpn = itemName;
+            selectedChar.wpnPwr = weaponStrength;
         }
 
         if(isArmour)
         {
-            if (selectedCharacter.equippedArmour != "")
+            if (selectedChar.equippedArmr != "")
             {
-                GameManager.instance.AddItem(selectedCharacter.equippedArmour);
+                GameManager.instance.AddItem(selectedChar.equippedArmr);
             }
 
-            selectedCharacter.equippedArmour = itemName;
-            selectedCharacter.armourPwr = armourStrength;
+            selectedChar.equippedArmr = itemName;
+            selectedChar.armrPwr = armorStrength;
         }
 
         GameManager.instance.RemoveItem(itemName);
